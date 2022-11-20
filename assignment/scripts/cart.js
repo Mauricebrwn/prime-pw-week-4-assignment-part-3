@@ -6,13 +6,7 @@ let basket = [];
 function addItem(item){
     console.log('addItem', item );
     basket.push(item);
-    if (addItem){
-        return true;
-    }
-    else {
-        return false;
-    }
-
+    return true;
 }
 
 
@@ -31,13 +25,9 @@ function listItems(){
 let index = 0 
 let basketLength = 5
 while(index<basketLength){
-    console.log(basket[index]);
+    console.log(basket[index])
     index++;
 }
-let emptybasket= 0
-function empty(emptybasket){
-while(basket.length > 0)
-    basket.pop();
-    console.log(empty);
+function empty(){
+    return Array.length=0
 }
-console.log(emptybasket);
